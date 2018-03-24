@@ -22,7 +22,7 @@ node {
     }
 
     stage('Build Docker Image') {
-        buildImage = docker.build("hubtea/spring-cloud-zuul:${commitHash}")
+        buildImage = docker.build("nockdookong/spring-cloud-zuul:${commitHash}")
     }
 
     stage('Archive') {
